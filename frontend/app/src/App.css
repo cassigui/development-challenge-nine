@@ -1,0 +1,163 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right bottom, #070F2B, #1D267D);
+  scroll-behavior: smooth;
+}
+
+#root {
+  max-width: 1280px;
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("https://medcloud.link/svgs/logo-medcloud-ligthblue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+
+/*Scroll style*/
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #61dafbaa;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #046b88aa;
+}
+/* End scroll style */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.container img {
+  margin: auto;
+}
+
+#form {
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+
+#form label {
+  display: none;
+}
+
+#form input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s;
+}
+
+#form input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+#form input:focus {
+  transition: all 0.3s;
+  background: rgba(0, 0, 0, 0.4);
+  background: none;
+  box-shadow: none;
+}
+
+#form button {
+  background: #61dafbaa;
+}
+
+
+table {
+  border-collapse: collapse;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+table button {
+  padding: 5px 10px;
+}
+
+thead tr {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #83daf1aa;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+tbody tr {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 8px 0;
+  margin-bottom: 5px;
+}
+
+tbody{
+  display: block;
+  height: 100%;
+  overflow-y: auto;
+}
+
+tbody td {
+  display: flex;
+  align-items: center;
+}
+
+.buttonsCollumn{
+  display: flex;
+  gap: 10px;
+}
+
+.buttonsCollumn button:nth-child(1) {
+  background: #4caf50;
+}
+
+.buttonsCollumn button:nth-child(2) {
+  background: #f44336;
+}
+
+tr {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+th {
+  padding: 10px;
+}
+
+
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.read-the-docs {
+  color: #888;
+} */

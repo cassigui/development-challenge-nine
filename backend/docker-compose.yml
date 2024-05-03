@@ -1,0 +1,16 @@
+services:
+  database: 
+    image: postgres
+    container_name: database
+    restart: always
+    ports: 
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=147852369c
+      - POSTGRES_DB=crud
+    volumes:
+      - pgdata:/data/postgres
+volumes:
+    pgdata:
+      driver: local
